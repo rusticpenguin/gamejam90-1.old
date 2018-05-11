@@ -23,7 +23,7 @@
     "option_mac_signing_identity": "Developer ID Application:",
     "option_mac_splash_png": "${base_options_dir}\/mac\/splash\/splash.png",
     "option_mac_start_fullscreen": false,
-    "option_mac_team_id": null,
+    "option_mac_team_id": "",
     "option_mac_texture_page": "2048x2048",
     "option_mac_version": {
         "build": 0,
@@ -31,5 +31,5 @@
         "minor": 0,
         "revision": 0
     },
-    "option_mac_vsync": false
+    "option_mac_vsync": true
 }
