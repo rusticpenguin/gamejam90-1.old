@@ -1,4 +1,4 @@
-///Controll the player's state
+///@description Control the player's state
 get_input();
 
 // Execute the state

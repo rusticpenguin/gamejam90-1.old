@@ -9,7 +9,7 @@ if (!place_meeting(x, y+1, Solid)){
 	image_speed = 0;
 	image_index = (vspd > 0);
 	
-	// Controll the jump height
+	// Variable Jump Height
 	if (jump_release && vspd < -4){
 		vspd = -4;
 	}

@@ -1,4 +1,4 @@
-/// Initialize the player object
+/// @description Initialize the player object
 get_input();
 
 spd = 2;
