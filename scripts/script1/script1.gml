@@ -1,0 +1,1 @@
+///direction_move_bounce(collision_object)

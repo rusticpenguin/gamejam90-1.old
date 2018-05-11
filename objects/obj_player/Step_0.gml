@@ -1,2 +1,5 @@
-/// @description Execute state
-// You can write your code in this editor
+///Controll the player's state
+get_input();
+
+// Execute the state
+script_execute(entrance_state);
