@@ -55,12 +55,34 @@ if (place_meeting(x, y+vspd+1, Solid) && vspd > 0) {
 move(Solid);
 
 if cselectorL {
-	if (red = 0) {
-		red = 1;
-		show_debug_message(red);
-	} else if (red = 1) {
-		red = 0;
-		show_debug_message(red);
+	if global.currentcolor == "Gray" {
+	  global.currentcolor = "Blue";
+		show_debug_message(global.currentcolor + " selected!");
+	} else if global.currentcolor == "Blue" {
+	  global.currentcolor = "Green";
+		show_debug_message(global.currentcolor + " selected!");
+	} else if global.currentcolor == "Green" {
+	  global.currentcolor = "Red";
+		show_debug_message(global.currentcolor + " selected!");
+	} else if global.currentcolor == "Red" {
+	  global.currentcolor = "Gray";
+		show_debug_message(global.currentcolor + " selected!");
+	}
+}
+
+if cselectorR {
+	if global.currentcolor == "Gray" {
+	  global.currentcolor = "Red";
+		show_debug_message(global.currentcolor + " selected!");
+	} else if global.currentcolor == "Red" {
+	  global.currentcolor = "Green";
+		show_debug_message(global.currentcolor + " selected!");
+	} else if global.currentcolor == "Green" {
+	  global.currentcolor = "Blue";
+		show_debug_message(global.currentcolor + " selected!");
+	} else if global.currentcolor == "Blue" {
+	  global.currentcolor = "Gray";
+		show_debug_message(global.currentcolor + " selected!");
 	}
 }
 
