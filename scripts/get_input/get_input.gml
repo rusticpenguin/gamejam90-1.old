@@ -5,9 +5,8 @@ jump = keyboard_check_pressed(ord("Z"));
 jump_release = keyboard_check_released(ord("Z"));
 down = keyboard_check(vk_down);
 door = keyboard_check(vk_up);
-//shoot = keyboard_check_pressed(ord('X'));
-//dash = keyboard_check_pressed(vk_shift);
-//dash_release = keyboard_check_released(vk_shift);
+cselectorL = keyboard_check_pressed(ord("Q"));
+cselectorR = keyboard_check_pressed(ord("E"));
 
 // Override the controls for a gamebad
 var gp_id = 0; 
