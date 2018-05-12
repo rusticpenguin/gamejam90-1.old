@@ -64,6 +64,11 @@ if cselectorL {
 	}
 }
 
+// if cselectorR {
+// 	currentcolor = 
+// 	show_debug_message(currentcolor);
+// }
+
 /*
 // Check for ledge grab state (INCASE WE WANT A LEDGE GRAB THIS WORKS SO LIKE WE CAN USE THIS I GUESS)
 var falling = y-yprevious > 0
