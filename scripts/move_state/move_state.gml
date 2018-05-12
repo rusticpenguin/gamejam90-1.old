@@ -54,24 +54,6 @@ if (place_meeting(x, y+vspd+1, Solid) && vspd > 0) {
 
 move(Solid);
 
-/* SHOOT Stuff
-// Shoot Bullet
-if (shoot) {
-instance_create(x,y,Bullet_1)
-}
-*/
-
-// Dash
-/*if (dash) {
-sprite_index = spr_player_dash
-hspd = 16*(sign(Player.image_xscale))
-   if (dash_release){
-   state = move_state
-   }
-sprite_index = spr_player_idle
-}
-*/
-
 /*
 // Check for ledge grab state (INCASE WE WANT A LEDGE GRAB THIS WORKS SO LIKE WE CAN USE THIS I GUESS)
 var falling = y-yprevious > 0
