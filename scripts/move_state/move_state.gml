@@ -54,6 +54,16 @@ if (place_meeting(x, y+vspd+1, Solid) && vspd > 0) {
 
 move(Solid);
 
+if cselectorL {
+	if (red = 0) {
+		red = 1;
+		show_debug_message(red);
+	} else if (red = 1) {
+		red = 0;
+		show_debug_message(red);
+	}
+}
+
 /*
 // Check for ledge grab state (INCASE WE WANT A LEDGE GRAB THIS WORKS SO LIKE WE CAN USE THIS I GUESS)
 var falling = y-yprevious > 0
