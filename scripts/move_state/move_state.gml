@@ -70,6 +70,7 @@ if cselectorL {
 	}
 }
 
+
 if cselectorR {
 	if global.currentcolor == "Gray" {
 	  global.currentcolor = "Red";
