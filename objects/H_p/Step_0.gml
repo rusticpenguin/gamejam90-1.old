@@ -1,11 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
-//mask_index = spr_platform;
+mask_index = spr_platform;
 hspd = dir * movespeed;
+
+
 
 // HorizontalCollision
 
-if (!place_meeting(x+sign(hspd),y,Solid))
+if (place_meeting(x+sign(hspd),y,Solid))
 {
 	
 		while (!place_meeting(x+sign(hspd),y,Solid))
@@ -17,8 +19,14 @@ if (!place_meeting(x+sign(hspd),y,Solid))
 		
 		dir *=-1;
 }
+hspd = dir * movespeed;
 
 x += hspd;
+
+
+
+
+
 
 //if (instance_exists(obj_player))
 //{
