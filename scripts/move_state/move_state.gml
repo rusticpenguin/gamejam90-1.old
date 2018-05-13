@@ -54,23 +54,20 @@ if (place_meeting(x, y+vspd+1, Solid) && vspd > 0) {
 
 move(Solid);
 
-/* SHOOT Stuff
-// Shoot Bullet
-if (shoot) {
-instance_create(x,y,Bullet_1)
+if cselectorL {
+	if (red = 0) {
+		red = 1;
+		show_debug_message(red);
+	} else if (red = 1) {
+		red = 0;
+		show_debug_message(red);
+	}
 }
-*/
 
-// Dash
-/*if (dash) {
-sprite_index = spr_player_dash
-hspd = 16*(sign(Player.image_xscale))
-   if (dash_release){
-   state = move_state
-   }
-sprite_index = spr_player_idle
-}
-*/
+// if cselectorR {
+// 	currentcolor = 
+// 	show_debug_message(currentcolor);
+// }
 
 /*
 // Check for ledge grab state (INCASE WE WANT A LEDGE GRAB THIS WORKS SO LIKE WE CAN USE THIS I GUESS)
